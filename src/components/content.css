@@ -1,0 +1,190 @@
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 10px auto 0 auto;
+  gap: 8px;
+}
+
+.grid {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  display: flex;
+}
+
+.grid-title {
+  font-family: ubuntu, sans-serif;
+  position: sticky;
+  letter-spacing: 1.3px;
+  color: #fff;
+}
+
+.grid::-webkit-scrollbar {
+  display: none;
+}
+
+.grid-item {
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.16s ease-in-out;
+  position: relative;
+  max-height: 140px;
+  max-width: 280px;
+}
+
+.grid-movie-name {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  font-weight: bold;
+  font-family: ubuntu, sans-serif;
+  color: #fff;
+}
+.grid-movie-seemore-btn {
+  position: absolute;
+  bottom: 14px;
+  right: 24px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+  color: rgb(193, 188, 188);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.grid-movie-seemore-btn:hover {
+  color: rgb(155, 152, 152);
+}
+
+.grid-item:hover {
+  transform: scale(1.06);
+}
+
+.grid-item img {
+  max-height: 140px;
+  max-width: 280px;
+  object-fit: cover;
+}
+
+.heart-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: rgb(181, 173, 173);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.16s ease-in-out;
+}
+
+.heart-btn:hover {
+  color: rgb(155, 152, 152);
+}
+
+.movie-detail-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  animation: movie-detail-container-anim linear 0.16s;
+  transition: opacity 0.16s ease-in-out;
+}
+
+@keyframes movie-detail-container-anim {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.movie-detail {
+  max-width: 500px;
+  width: 100%;
+  background-color: #141414;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.348);
+  color: white;
+}
+
+.movie-detail-remove-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+  transition: color 0.16s ease-in-out;
+}
+
+.movie-detail-remove-btn:hover {
+  color: rgba(255, 0, 0, 0.767);
+}
+
+.movie-detail img {
+  max-width: 500px;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.movie-detail-info {
+  padding: 1rem;
+}
+
+.movie-detail-title {
+  font-family: ubuntu, sans-serif;
+  margin: 6px 0;
+}
+
+.movie-detail-description {
+  font-family: ubuntu, sans-serif;
+}
+
+.movie-detail-extra {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 1rem;
+}
+
+.movie-detail-play-btn,
+.movie-detail-watchlater-btn {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  padding: 8px 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.16s ease-in-out;
+  font-size: 1rem;
+}
+
+.movie-detail-play-btn:hover,
+.movie-detail-watchlater-btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.773);
+}

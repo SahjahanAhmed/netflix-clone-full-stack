@@ -1,0 +1,28 @@
+.credit-div {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.8rem;
+  gap: 0.4rem;
+  padding: 0.3rem 0;
+  font-family: sans-serif;
+}
+
+.credit-div * {
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.credit-div a {
+  text-decoration: none;
+}

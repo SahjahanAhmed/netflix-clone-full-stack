@@ -1,0 +1,68 @@
+.header {
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 70px;
+  display: flex;
+  align-items: end;
+  box-shadow: 0 -100px 40px inset rgba(0, 0, 0, 0.3),
+    0 50px 30px inset rgba(0, 0, 0, 0.3);
+}
+
+.movie-info {
+  width: 100%;
+  max-width: 450px;
+  font-family: sans-serif;
+  margin-bottom: 50px;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.6rem;
+  font-family: ubuntu, sans-serif;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.description {
+  margin-top: 20px;
+  font-family: ubuntu, sans-serif;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+}
+
+.header-buttons {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.header-buttons button {
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.16s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.16s ease-in-out;
+}
+
+.play-now-btn:hover,
+.watch-later-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.592);
+}
+
+/* little bit media query */
+@media screen and (max-width: 430px) {
+  .movie-info {
+    margin-left: 23px;
+    margin-right: 10px;
+  }
+}

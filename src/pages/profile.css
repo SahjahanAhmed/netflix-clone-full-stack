@@ -1,0 +1,20 @@
+.discover-new-btn {
+  text-decoration: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.16s ease-in-out;
+  gap: 6px;
+  transition: all 0.16s ease-in-out;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.discover-new-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.592);
+}
